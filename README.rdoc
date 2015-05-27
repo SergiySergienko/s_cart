@@ -1,28 +1,9 @@
 == README
+Shopping cart test
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Using sqlite3 as DB
 
-Things you may want to cover:
+Contains simple shopping cart and products discounts inside
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+1. rake db:setup
+2. run server and open localhost:3000

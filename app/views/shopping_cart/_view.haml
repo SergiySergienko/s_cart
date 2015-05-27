@@ -1,0 +1,6 @@
+- if @c_products && @c_products.length > 0
+  .info
+    #{@c_products.length} products in
+    = link_to "cart", shopping_cart_index_path()
+- else
+  .message "No products in cart"

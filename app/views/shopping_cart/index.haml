@@ -1,0 +1,30 @@
+= link_to "Back to main", root_path
+<hr />
+- if @products && @products.length > 0
+  - @products.each do |product|
+    .product-wrapper
+      .name
+        = product.name
+      .description
+        = product.description
+      .price
+        = product.price
+      .price
+        = product.batch_price
+      .qty
+        = @c_products[product.id.to_s][:qty]
+      .actions
+        = link_to 'Add one', shopping_cart_inc_path(product)
+        |
+        = link_to 'Del one', shopping_cart_dec_path(product)
+        |
+        = link_to 'Delete all', shopping_cart_drop_path(product)
+
+  <hr />
+  .total-holder
+    Total:
+    %span #{@order.get_total_without_discount}
+    with discount:
+    %span #{@order.get_total}
+<hr />
+= link_to 'Clear', shopping_cart_clear_path

@@ -1,0 +1,20 @@
+// Place all the styles related to the product controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.product-wrapper {
+  display: table;
+}
+.product-wrapper .name,
+.product-wrapper .description,
+.product-wrapper .price,
+.product-wrapper .qty,
+.product-wrapper .actions {
+  display: table-cell;
+  padding: 5px;
+}
+.product-wrapper .qty {
+  font-weight: bold;
+}
+.total-holder span {
+  font-weight: bold;
+}
